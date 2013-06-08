@@ -1,9 +1,9 @@
-WarmuP.Templates
+WarmuP.MvcWithBootstrap
 ================
 
-Repository for my WarmuP templates
-
-## MVC with Bootstrap
+```
+warmup http://github.com/kmcginnes/WarmuP.MvcWithBootstrap FooBar
+```
 
 This folder contains a basic web site template with the following features:
 
