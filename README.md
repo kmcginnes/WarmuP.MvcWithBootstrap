@@ -11,7 +11,7 @@ This folder contains a basic web site template with the following features:
 * JQuery 2.0
 * PJAX
 * Twitter Bootstrap (the less source)
-* FontAwesome for Twitter Bootstrap
+* [FontAwesome for Twitter Bootstrap](http://fortawesome.github.io/Font-Awesome/)
 * MiniProfiler
 
 ### Prerequisites:
