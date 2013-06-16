@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        @this.InitClientTimings()
         <meta charset="utf-8">
         <title>Template &middot; Bootstrap</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +10,15 @@
         <meta name="author" content="">
 
         <!-- Le styles -->
-        <link href="@Url.Content("../../Content/less/bootstrap.css")" rel="stylesheet">
+        @this.TimeScript("Bootstrap",
+            @<link href="@Url.Content("../../Content/less/bootstrap.css")" rel="stylesheet" />)
         <style type="text/css">
             body {
                 padding-top: 20px;
                 padding-bottom: 40px;
             }
 
-      /* Custom container */
+            /* Custom container */
             .container-narrow {
                 margin: 0 auto;
                 max-width: 700px;
@@ -25,7 +27,7 @@
                 margin: 30px 0;
             }
 
-      /* Main marketing message and sign up button */
+            /* Main marketing message and sign up button */
             .jumbotron {
                 margin: 60px 0;
                 text-align: center;
@@ -39,7 +41,7 @@
                 padding: 14px 24px;
             }
 
-      /* Supporting marketing content */
+            /* Supporting marketing content */
             .marketing {
                 margin: 60px 0;
             }
@@ -91,10 +93,15 @@
         <!-- Le javascript
             ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="@Url.Content("../Scripts/jquery.js")"></script>
-        <script src="@Url.Content("../Scripts/jquery.pjax.js")"></script>
-        <script src="@Url.Content("../Scripts/bootstrap.js")"></script>
-        <script src="@Url.Content("../Scripts/App/App.js")"></script>
+        @this.TimeScript("jQuery",
+            @<script src="@Url.Content("../Scripts/jquery.js")"></script>)
+        @this.TimeScript("jQuery PJAX",
+            @<script src="@Url.Content("../Scripts/jquery.pjax.js")"></script>)
+        @this.TimeScript("Bootstrap JS",
+            @<script src="@Url.Content("../Scripts/bootstrap.js")"></script>)
+        @this.TimeScript("App.js",
+            @<script src="@Url.Content("../Scripts/App/App.js")"></script>)
+
         @RenderSection("Scripts", false)
         @MiniProfiler.RenderIncludes()
     </body>
