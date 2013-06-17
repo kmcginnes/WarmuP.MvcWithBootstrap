@@ -42,6 +42,12 @@
                 font-size: 21px;
                 padding: 14px 24px;
             }
+            .jumbotron i {
+                float: left;
+                font-size: 290px;
+                color: #9d261d;
+                text-shadow: 2px 2px 3px #222222;
+            }
 
             /* Supporting marketing content */
             .marketing {
@@ -52,17 +58,12 @@
             }
         </style>
 
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-            <script src="../assets/js/html5shiv.js"></script>
-        <![endif]-->
-
         <!-- Fav and touch icons -->
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-        <link rel="shortcut icon" href="../assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="@Url.Content("../Content/ico/apple-touch-icon-144-precomposed.png")">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="@Url.Content("../Content/ico/apple-touch-icon-114-precomposed.png")">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="@Url.Content("../Content/ico/apple-touch-icon-72-precomposed.png")">
+        <link rel="apple-touch-icon-precomposed" href="@Url.Content("../Content/ico/apple-touch-icon-57-precomposed.png")">
+        <link rel="shortcut icon" href="@Url.Content("../Content/ico/favicon.png")">
     </head>
 
     <body>
@@ -101,7 +102,7 @@
         @this.TimeScript("Bootstrap JS",
             @<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>)
         @this.TimeScript("App.less",
-            @<script src="@Url.Content("../Scripts/App/App.coffee")"></script>)
+            @<script src="@Url.Content("../Scripts/App.coffee")"></script>)
 
         @RenderSection("Scripts", false)
         @MiniProfiler.RenderIncludes()

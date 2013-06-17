@@ -148,27 +148,14 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Content Include="App_Readme\RequestReduce.readme.txt" />
-    <Content Include="Content\font\fontawesome-webfont.svg" />
-    <Content Include="Content\images\glyphicons-halflings-white.png" />
-    <Content Include="Content\images\glyphicons-halflings.png" />
-    <Content Include="Content\images\rocket-icon.svg" />
+    <Content Include="Content\ico\apple-touch-icon-114x114-precomposed.png" />
+    <Content Include="Content\ico\apple-touch-icon-144x144-precomposed.png" />
+    <Content Include="Content\ico\apple-touch-icon-57x57-precomposed.png" />
+    <Content Include="Content\ico\apple-touch-icon-72x72-precomposed.png" />
+    <Content Include="Content\ico\apple-touch-icon-precomposed.png" />
+    <Content Include="Content\ico\apple-touch-icon.png" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\App\App.coffee" />
-    <Content Include="Content\font\fontawesome-webfont.woff" />
-    <Content Include="Content\font\fontawesome-webfont.ttf" />
-    <Content Include="Content\font\fontawesome-webfont.eot" />
-    <Content Include="Content\font\FontAwesome.otf" />
-    <Content Include="Scripts\App\App.js">
-      <DependentUpon>App.coffee</DependentUpon>
-    </Content>
-    <Content Include="Scripts\App\App.min.js">
-      <DependentUpon>App.coffee</DependentUpon>
-    </Content>
-    <None Include="Scripts\jquery-2.0.2-vsdoc.js" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\jquery-2.0.2.js" />
-    <Content Include="Scripts\jquery.pjax.js" />
-    <Content Include="Scripts\less.min.js" />
+    <Content Include="Scripts\App.coffee" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
