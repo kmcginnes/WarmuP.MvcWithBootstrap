@@ -6,7 +6,9 @@ namespace __NAME__.Web
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
+            "FilterConfig".Log().Info(() => "Registering MVC filters");
             filters.Add(new HandleErrorAttribute());
+            "FilterConfig".Log().Info(() => "HandleError filter registered successfully");
         }
     }
 }

@@ -7,10 +7,10 @@ namespace __NAME__.Web
     {
         protected void Application_Start()
         {
+            this.Log().Info(() => "Starting ASP.Net MVC app");
+
             ViewEngines.Engines.Clear();
             ViewEngines.Engines.Add(new RazorViewEngine());
-
-            AreaRegistration.RegisterAllAreas();
 
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
