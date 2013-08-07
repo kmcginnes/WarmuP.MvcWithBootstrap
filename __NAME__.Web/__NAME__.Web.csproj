@@ -138,6 +138,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\MiniProfiler.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\Alerts.cs" />
+    <Compile Include="Controllers\ControllerExtensions.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -169,6 +172,7 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="CodeTemplates\AddView\CSHTML\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -176,6 +180,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\About\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
