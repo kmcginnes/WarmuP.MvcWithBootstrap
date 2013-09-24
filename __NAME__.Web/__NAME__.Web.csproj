@@ -159,6 +159,7 @@
     <Content Include="Content\ico\apple-touch-icon-72x72-precomposed.png" />
     <Content Include="Content\ico\apple-touch-icon-precomposed.png" />
     <Content Include="Content\ico\apple-touch-icon.png" />
+    <Content Include="Content\ico\favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\App.coffee" />
     <Content Include="Web.config" />
