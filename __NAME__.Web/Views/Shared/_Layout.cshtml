@@ -10,10 +10,10 @@
         <meta name="author" content="">
 
         <!-- Le styles -->
-        @this.TimeScript("Bootstrap 2.3.2",
-            @<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet" />)
+        @this.TimeScript("Bootstrap 3.0.0",
+            @<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />)
         @this.TimeScript("Font Awesome",
-            @<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.css" rel="stylesheet" />)
+            @<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />)
         <style type="text/css">
             body {
                 padding-top: 20px;
@@ -63,7 +63,7 @@
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="@Url.Content("../Content/ico/apple-touch-icon-114-precomposed.png")">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="@Url.Content("../Content/ico/apple-touch-icon-72-precomposed.png")">
         <link rel="apple-touch-icon-precomposed" href="@Url.Content("../Content/ico/apple-touch-icon-57-precomposed.png")">
-        <link rel="shortcut icon" href="@Url.Content("../Content/ico/favicon.png")">
+        <link rel="shortcut icon" type=”image/x-icon” href="@Url.Content("../Content/ico/favicon.ico")">
     </head>
 
     <body>
@@ -71,9 +71,9 @@
         <div class="container-narrow">
             <div class="masthead">
                 <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#"><i class="icon-home"></i>Home</a></li>
-                    <li><a href="#"><i class="icon-info-sign"></i>About</a></li>
-                    <li><a href="#"><i class="icon-envelope"></i>Contact</a></li>
+                    <li class="active"><a href="#"><i class="icon-home"></i> Home</a></li>
+                    <li><a href="#"><i class="icon-info-sign"></i> About</a></li>
+                    <li><a href="#"><i class="icon-envelope"></i> Contact</a></li>
                 </ul>
                 <h3 class="muted"><i class="icon-globe"></i> SpaceX ERP</h3>
             </div>
@@ -100,8 +100,8 @@
         @this.TimeScript("jQuery PJAX",
             @<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.pjax/1.7.0/jquery.pjax.min.js"></script>)
         @this.TimeScript("Bootstrap JS",
-            @<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>)
-        @this.TimeScript("App.less",
+            @<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>)
+        @this.TimeScript("App.coffee",
             @<script src="@Url.Content("../Scripts/App.coffee")"></script>)
 
         @RenderSection("Scripts", false)
